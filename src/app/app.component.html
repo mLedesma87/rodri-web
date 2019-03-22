@@ -56,3 +56,18 @@
 		In addition, he has experience in organizing international conferences and teaching courses, in editorial activities for several publishing groups and in supervising and evaluating students, projects and researchers. He also has worldwide collaborations in both academia and industry.</p>
 	</div>
 </div>
+<div class="publications-bg">
+	<div class="publications-content">
+		<h1>
+			PUBLICATIONS
+		</h1>
+		<div class="list-publications">
+			<div class="publication" *ngFor="let publication of arrPublications">
+				<h2><a href="{{publication.doiUrl}}">{{publication.title}}</a></h2>
+				<p>{{publication.authors}}</p>
+				<p>{{publication.extraAuthors}}</p>
+				<p>{{publication.publicationDate}}</p>
+			</div>
+		</div>
+	</div>
+</div>
