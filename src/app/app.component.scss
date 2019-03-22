@@ -60,12 +60,19 @@
 .interest h2 {
 	text-transform: uppercase;
 	color: #569EB0;
+	font-size: calc(1em + 0.2vw);
 }
 
 .background-content {
 	margin: 0 auto;
 	width: 80%;
 	padding: 20% 0;
+}
+
+.background-content h1 {
+	color: #569EB0;
+	text-align: center;
+	font-size: calc(1em + 2vw);
 }
 
 .background-content img {
