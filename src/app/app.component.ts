@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
   title = 'DR. RODRIGO LEDESMA AMARO';
   arrPublications = [];
+  isLoading = true;
 
   constructor(public http: HttpClient) {	
 
@@ -21,6 +22,7 @@ export class AppComponent {
   			data = data.replace(');', '');
   			var jsonData = JSON.parse(data);
   			this.arrPublications = jsonData.response.results;
+  			this.isLoading = false;
 			console.log(jsonData);
         }, err => {
           console.log(err);

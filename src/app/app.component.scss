@@ -22,12 +22,31 @@
   width:100%;
 }
 
+.footer-bg {
+  display:table;
+  width:100%;
+  background: url(../assets/mesh-1430107_1280.png) no-repeat center center fixed;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  background-size: cover;
+}
+
+.joinus-bg {
+  display:table;
+  width:100%;
+  background: url(../assets/7096.jpg) no-repeat center center fixed;
+  background-color: rgba(0,0,0,0.5);
+  overflow: hidden;
+  background-size: cover;
+}
+
+
 .main-text {
 	margin: 0 auto;
 	color: #fff;
 	width: 80%;
 	text-align: center;
-	margin-top: 10%;
+	margin-top: 15%;
 }
 
 .main-text h1 {
@@ -99,6 +118,13 @@
 	width: 60%;
 }
 
+.list-publications img {
+	display: inherit;
+	width: 150px;
+	margin:	0 auto;
+
+}
+
 .publications-content h1 {
 	color: #2e5979;
 	text-align: center;
@@ -123,7 +149,41 @@
 	text-decoration: none;
 }
 
+.footer-content {
+	color: #fff;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+}
+
+.footer-content h1 {
+	color: #fff;
+	font-size: calc(1em + 2vw);
+}
+
+.footer-content a:link{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-content a:visited{
+	color: #fff;
+	text-decoration: none;
+}
+
+.footer-content p{
+	width: 100%;
+}
+
+.footer-content p i{
+	margin-right: 10px;
+}
+
 @media screen and (max-width: 600px) {
+	.main-text {
+		margin-top: 20%;
+	}
+
 	.interest {
 		width: 100%;
 	}
@@ -142,5 +202,4 @@
 		margin: 5px;
 		padding: 5px;
 	}
-
 }

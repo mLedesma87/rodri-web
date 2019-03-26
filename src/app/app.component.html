@@ -62,6 +62,7 @@
 			PUBLICATIONS
 		</h1>
 		<div class="list-publications">
+			<div *ngIf="isLoading"><img alt="loader" src="../assets/tail-spin.svg" /></div>
 			<div class="publication" *ngFor="let publication of arrPublications">
 				<h2><a href="{{publication.doiUrl}}">{{publication.title}}</a></h2>
 				<p>{{publication.authors}}</p>
@@ -69,5 +70,13 @@
 				<p>{{publication.publicationDate}}</p>
 			</div>
 		</div>
+	</div>
+</div>
+<div class="footer-bg">
+	<div class="footer-content">
+		<p><i class="fab fa-researchgate"></i><a href="https://www.researchgate.net/profile/Rodrigo_Ledesma-Amaro">Rodrigo Ledesma Amaro</a></p>
+		<p><i class="far fa-envelope"></i><a href="mailto:r.ledesma-amaro@imperial.ac.uk">r.ledesma-amaro@imperial.ac.uk</a></p>
+		<p><i class="fas fa-home"></i><a href="http://maps.google.com/?q=Royal+School+of+Mines+London">Imperial College London, Royal School of Mines, South Kensington Campus, London SW7 2AZ</a></p>
+		<p><i class="fas fa-phone"></i><a href="tel:+44 (0)20 7589 5111">+44 (0)20 7589 5111</a></p>
 	</div>
 </div>
